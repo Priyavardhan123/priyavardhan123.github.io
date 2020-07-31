@@ -1,47 +1,35 @@
 <!doctype html>
     <head>
         <title>DashBoard</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     </head>
     <body bgcolor=#EFF7FA>
 
-    <center><a><h1><u>Crop Marketing System </u></h1></a>
+        <header>
+            <center><p>Crop Marketing System</p></center>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="active">All Products</a></li>
+                <li><a href="#cereals">Cereals</a></li>
+                <li><a href="#pulses">Pulses</a></li>
+                <li><a href="#fruits">Fruits</a></li>
+                <li><a href="#spices">Spices</a></li>    
+                <li style="float:right"><a href="login.html">Logout</a></li>
+                <li style="float:right"><a href="cart.html">Cart</a></li>
+                <li style="float:right"><a href="wishlist.html">Wish List</a></li>
+                <li style="float:right"><a href="order_history.html">Order history</a></li>
+                <li style="float:right; margin: 12px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
+            </ul>
+        </nav>
 
-        <h2>Welcome User</h2>
-    <table border="1">
-        <tr>
-            <th>
-                All products
-            </th>
-            <th>
-               <a href="#cereals"> Cereals</a>
-            </th>
-            <th>
-                <a href="#pulses">Pulses</a>
-            </th>
-            <th>
-                <a href="#fruits">Fruits</a>
-            </th>
-            <th>
-                <a href="#spices">Spices</a>
-            </th>
-            <th>
-                <input type="text" placeholder="search here">
-            </th>
-            <th>
-                <a href="cart.html">Cart</a>
-            </th>
-            <th>
-                <a href="wishlist.html">Wish List</a>
-            </th>
-            <th>
-                <a href="order_history.html"> Order History</a>
-            </th>
-            <th>
-                <a href="index.html">logout</a>
-            </th>
-        </tr>
-    </table><br>
-    <table border="1">
+<div style="margin: 50px">
+
+<h4 style="font:30px 'Merienda One'">Welcome User</h4>
+
+    <table>
         <tr>
             <th colspan="4" id="cereals">
                 Cereals
@@ -70,7 +58,7 @@
             </td>
         </tr>
     </table><br><br>
-    <table border="1">
+    <table>
         <tr>
             <th colspan="4" id="pulses">
                 Pulses
@@ -99,7 +87,7 @@
             </td>
         </tr>
     </table><br><br>
-    <table border="1">
+    <table>
         <tr>
             <th colspan="4" id="fruits">
                 Fruits
@@ -107,7 +95,7 @@
         </tr>
         <tr>
             <td width="25%">
-                <img src="../assets/images/apple.png" height=40% width="100%"><br>
+                <img src="../assets/images/apple.png" height="35%" width="100%"><br>
                 <b><u>Apple</u></b>
                 <p>product details</p>
             </td>
@@ -123,12 +111,11 @@
             </td>
         </tr>
     </table>
-
+</div>
     <footer>
-        <br><h4 >Thank you. Visit again</h4>
+        <h4 >Thank you. Visit again</h4>
         <p >Copyright &copy; 2020 | <a href="#top">Back to top</a></p>
     </footer>
                     
-</center>
     </body>
 </html>

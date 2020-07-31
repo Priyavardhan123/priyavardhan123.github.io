@@ -1,27 +1,24 @@
 <!doctype html>
     <head>
         <title>DashBoard</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     </head>
     <body bgcolor=#EFF7FA>
 
-    <center><a><h1><u>Crop Marketing System </u></h1></a>
-
+        <header >
+            <center><p>Crop Marketing System</p></center>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="producer_dashboard.html" class="active">My Products</a></li>   
+                <li style="float:right"><a href="login.html">Logout</a></li>
+                <li style="float:right"><a href="order_history.html">Order history</a></li>
+                <li style="float:right; margin: 12px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
+            </ul>
+        </nav>
         <h2>Welcome User</h2>
-    <table border="1">
-        <tr>
-            <th>
-                My products
-            </th>
-            
-            <th>
-                <input type="text" placeholder="search here">
-            </th>
-            
-            <th>
-                <a href="index.html">logout</a>
-            </th>
-        </tr>
-    </table><br>
     <table border="1">
         <tr>
             <th colspan="4" id="cereals">

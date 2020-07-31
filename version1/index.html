@@ -1,43 +1,119 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <title>Login</title>
-  </head>
-  <body bgcolor=#EFF7FA>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+    <body bgcolor=#EFF7FA>
 
-    <center><h1><u>Crop Marketing System</u></h1></center>
+        <header>
+            <center><p>Crop Marketing System</p></center>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="active">All Products</a></li>
+                <li><a href="#cereals">Cereals</a></li>
+                <li><a href="#pulses">Pulses</a></li>
+                <li><a href="#fruits">Fruits</a></li>
+                <li><a href="#spices">Spices</a></li>
+                <li style="float:right"><a href="register.html">Register</a></li>
+                <li style="float:right"><a href="login.html">Login</a></li>
+                <li style="float:right; margin: 12px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
+            </ul>
+        </nav>
 
-    <br>
-    <div>
-				
-        <center>
-            <u><h3>Login Here</h3></u> <br>
-            <form action="dashboard.html">
-                <label for="user_type">Login as</label> : 
-                <select name="loginas" id="user_type" required>
-                    <option value="">--select--</option>
-                    <option value="consumer">Consumer</option>
-                    <option value="producer">Producer</option>
-                    <option value="admin">Admin</option>
-                </select><br><br>
+<div style="margin: 50px">
 
-                <label for="username">Username</label> : 
-                <input type="text" name="username" id="username" required><br><br>
+<h4 style="font:30px/1.2 'Merienda One', Helvetica, sans-serif;">See What's New</h4>
 
-                <label for="pass">Password</label> : 
-                <input type="password" name="pass" id="pass" required> <br><br>
-
-                <button type="submit" value="Login">Login</button>
-            </form>
-            <br>
-            Don't have an account? <a href="register.html">SignUp Here</a><br><br>
-            <a href="dashboard.html">Go to dashboard</a>
-            <br><br><br><br><br><br><br>
-            <footer>
-                <h4>Thank you. Visit again</h4>
-                <p >Copyright &copy; 2020  | <a href="#top">Back to top</a></p>
-            </footer>
-	    </center>
-	</div>
-</body>
+    <table>
+        <tr>
+            <th colspan="4" id="cereals">
+                Cereals
+            </th>
+        </tr>
+        <tr>
+            <td width="25%">
+                <img src="../assets/images/wheat.jpg" height=50% width="100%"><br>
+                <b><u>Wheat</u></b>
+                <p>product details</p>
+            </td>
+            <td width="25%">
+                <img src="../assets/images/rice.jpg" height=25% width="100%"><br>
+                <b><u>Rice</u></b>
+                <p>product details</p>
+            </td>
+            <td width="25%">
+                <img src="../assets/images/maize.jpg" height=43% width="100%"><br>
+                <b><u>Maize</u></b>
+                <p>product details</p>
+            </td>
+            <td width="25%">
+                <img src="../assets/images/maize1.jpg" height=33% width="100%"><br>
+                <b><u>Maize</u></b>
+                <p>product details</p>
+            </td>
+        </tr>
+    </table><br><br>
+    <table border="1">
+        <tr>
+            <th colspan="4" id="pulses">
+                Pulses
+            </th>
+        </tr>
+        <tr>
+            <td width="25%">
+                <img src="../assets/images/chana.jpg" height=50% width="100%"><br>
+                <b><u>Gram (chana)</u></b>
+                <p>product details</p>
+            </td>
+            <td width="25%">
+                <img src="../assets/images/rajma.jpg" height=55% width="100%"><br>
+                <b><u>kidney beans (rajma)</u></b>
+                <p>product details</p>
+            </td>
+            <td width="25%">
+                <img src="../assets/images/toor.jpg" height=43% width="100%"><br>
+                <b><u>toor dal</u></b>
+                <p>product details</p>
+            </td>
+            <td width="25%">
+                <img src="../assets/images/moong.jpeg" height=33% width="100%"><br>
+                <b><u>moong</u></b>
+                <p>product details</p>
+            </td>
+        </tr>
+    </table><br><br>
+    <table border="1">
+        <tr>
+            <th colspan="4" id="fruits">
+                Fruits
+            </th>
+        </tr>
+        <tr>
+            <td width="25%">
+                <img src="../assets/images/apple.png" height=40% width="100%"><br>
+                <b><u>Apple</u></b>
+                <p>product details</p>
+            </td>
+            <td width="25%">
+                <img src="../assets/images/grapes.jpg" height=35% width="100%"><br>
+                <b><u>grapes</u></b>
+                <p>product details</p>
+            </td>
+            <td width="25%">
+                <img src="../assets/images/mango.jpg" height=43% width="100%"><br>
+                <b><u>Mango</u></b>
+                <p>product details</p>
+            </td>
+        </tr>
+    </table>
+</div>
+    <footer>
+        <h4 >Thank you. Visit again</h4>
+        <p >Copyright &copy; 2020 | <a href="#top">Back to top</a></p>
+    </footer>
+                    
+    </body>
 </html>
