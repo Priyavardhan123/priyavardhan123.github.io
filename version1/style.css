@@ -91,6 +91,7 @@ table tr td{
     background-color: #008CBA;
     padding: 15px 32px;
     font-size: 16px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     color: white;
