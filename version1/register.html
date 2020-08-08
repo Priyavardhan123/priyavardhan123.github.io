@@ -22,30 +22,30 @@
 			<u><h3>Register</h3></u> <br>
 			<form action="dashboard.html" method="POST">
 				<label for="user_type">Register as</label> : 
-				<select name="loginas" id="user_type" required>
+				<select name="loginas" id="user_type">
 					<option value="">--select--</option>
-					<option value="consumer">Consumer</option>
+					<option value="consumer" selected>Consumer</option>
 					<option value="producer">Producer</option>
 					<option value="admin">Admin</option>
 				</select><br><br>
 
 				<label for="name">Name</label> : &emsp;&emsp;
-				<input type="text" name="name" id="name" ><br><br>
+				<input type="text" name="name" id="name" value="user"><br><br>
 				
 				<label for="username">Username</label> : &nbsp;
-				<input type="text" name="username" id="username" ><br><br>
+				<input type="text" name="username" id="username" value="user1"><br><br>
 
 				<label for="pass">Password</label> : &nbsp;
-				<input type="password" name="pass" id="pass" > <br><br>
+				<input type="password" name="pass" id="pass" value="password"> <br><br>
 
 				<label for="con_pass">Confirm Password</label> : &nbsp;
-				<input type="password" name="con_pass" id="con_pass" required> <br><br>
+				<input type="password" name="con_pass" id="con_pass" value="password"> <br><br>
 				
 				<label for="email">E-mail</label> : &emsp;&emsp;
-				<input type="email" name="email" id="email"> <br><br>
+				<input type="email" name="email" id="email" value="user1@gmail.com"> <br><br>
 				
 				<label for="contact">Contact No.</label> : 
-				<input type="number" name="contact" id="contact"> <br><br>
+				<input type="number" name="contact" id="contact" value="1234567890"> <br><br>
 
                 <button type="button" value="register" onclick="register()" class="button">Register</button>
 			</form>

@@ -5,10 +5,14 @@ function register(){
     var con_pass = document.getElementById("con_pass").value;
     var email = document.getElementById("email").value;
     var contact = document.getElementById("contact").value;
+    var user_type = document.getElementById("user_type").value;
 
 
 
-    if ( name=="" )
+    if ( user_type=="" )
+        alert("Select user type");
+    
+    else if ( name=="" )
         alert("Enter Name");
 
     else if ( username=="" )
@@ -35,7 +39,7 @@ function register(){
 
     else 
     {
-        alert("Registration successful.\nName : " + name + "\nUsername : " + username + "\nE-mail : " + email + "\nContact No. : " + contact );
+        alert("Registration successful.\nUser type : " + user_type + "\nName : " + name + "\nUsername : " + username + "\nE-mail : " + email + "\nContact No. : " + contact );
         window.location = "dashboard.html";
     }
 }
