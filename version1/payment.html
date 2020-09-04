@@ -1,40 +1,73 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Redirecting..</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  </head>
-  <body bgcolor=#EFF7FA>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <header>
-      <center><p>Crop Marketing System</p></center>
-  </header>
-  <nav>
-    <ul>
-        <li><a href="dashboard.html">All Products</a></li>   
-        <li style="float:right"><a href="login.html">Logout</a></li>
-        <li style="float:right"><a href="cart.html">Cart</a></li>
-        <li style="float:right"><a href="wishlist.html">Wish List</a></li>
-        <li style="float:right"><a href="order_history.html">Order history</a></li>
-        <li style="float:right; margin: 12px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
-    </ul>
-</nav>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Redirecting...</title>
+  </head>
+  <body style="font-family: Montserrat ; background-color: #EFF7FA ; overflow-x: hidden;">
+
+    <header class="text-center blog-header bg-dark text-white">
+        <h1 class="p-3">Crop Marketing System</h1>
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="margin-top: -2%">
+        <a class="navbar-brand brand" href="dashboard.html">All Products</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+            </ul>
+            <ul class="navbar-nav mr-0">
+                <li style="float:right; margin: 3px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">Order History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="wishlist.html">Wish List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="login.html">Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
     <br>
-	<center>
-        <u><h3>Redirecting to Payment Gateway</h3></u> <br>
-        <form action="status.html">
+
+    <div class="container text-center">
+            <h4 style="font:30px/1.2 'Merienda One', Helvetica, sans-serif;">Redirecting to Payment Gateway</h4>
+            <form action="status.html">
                     <img src="../assets/images/redirecting.gif" width="50%" alt="Redirecting...">
                <br><br>
-                  <button class="button active" type="submit">Proceed</button>
+                  <button class="btn btn-info" type="submit">Proceed</button>
 
         </form>
-		<footer style="bottom: 0">
-			<h4>Thank you. Visit again</h4>
-			<p >Copyright &copy; 2020  | <a href="#top">Back to top</a> | <a href="dashboard.html">Back to Dashboard</a></p>
-		</footer>
-	</center>
-	</div>
+    </div>
+
+    <br>
+    <footer>
+        <h4>Thank you. Visit again</h4>
+        <p >Copyright &copy; 2020 | <a href="#top" style="color: white">Back to top</a> | <a href="dashboard.html" style="color: white">Back to DashBoard</a> </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>

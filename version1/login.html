@@ -1,52 +1,85 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <script src="/js/login.js"></script>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/login.js"></script>
+    <title>Login</title>
   </head>
-  <body bgcolor=#EFF7FA>
+  <body style="font-family: Montserrat ; background-color: #EFF7FA ; overflow-x: hidden;">
 
-    <header >
-        <center><p>Crop Marketing System</p></center>
+    <header class="text-center blog-header bg-dark text-white">
+        <h1 class="p-3">Crop Marketing System</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>  
-            <li style="float:right"><a href="register.html">Register</a></li>
-            <li style="float:right"><a href="login.html" class="active">Login</a></li>
-        </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="margin-top: -2%">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+            </ul>
+
+        </div>
     </nav>
-    <div>
-        <br>
-        <center>
-            <u><h3>Login Here</h3></u> <br>
-            <form action="dashboard.html" method="POST"
-                <label for="user_type">Login as</label> : 
-                <select name="loginas" id="user_type" required>
-                    <option value="">--select--</option>
-                    <option value="consumer" selected>Consumer</option>
-                    <option value="producer">Producer</option>
-                    <option value="admin">Admin</option>
-                </select><br><br>
 
-                <label for="username">Username</label> : 
-                <input type="text" name="username" id="username" value="user1" required><br><br>
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <img src="../assets/images/carousel1.jpeg" height="100%" width="100%" style="z-index: -5; position: relative;">
+        </div>
+        <div class="col-md-5 align-self-center">
+            <center>
+                <div style="margin-left: -20%"><br><br>
+                <u><h3>Login Here</h3></u> <br>
+                
+                <form action="dashboard.html" method="post" class="form-class">
+                    <label for="user_type">Login as</label> : 
+                    <select name="loginas" id="user_type" required>
+                        <option value="">--select--</option>
+                        <option value="consumer" selected>Consumer</option>
+                        <option value="producer">Producer</option>
+                        <option value="admin">Admin</option>
+                    </select><br><br>
 
-                <label for="pass">Password</label> : 
-                <input type="password" name="pass" id="pass" value="user10702" required> <br><br>
+                    <label for="username">Username</label> : 
+                    <input type="text" name="username" id="username" value="user1" required><br><br>
 
-                <button type="button" value="Login" onclick="check()" class="button">Login</button>
-            </form>
-            <br>
-            Don't have an account? <a href="register.html">SignUp Here</a><br><br>
-            <br><br><br><br><br><br><br>
-            <footer>
-                <h4>Thank you. Visit again</h4>
-                <p >Copyright &copy; 2020 </p>
-            </footer>
-	    </center>
-	</div>
-</body>
+                    <label for="pass">Password</label> : 
+                    <input type="password" name="pass" id="pass" value="user10702" required> <br><br>
+
+                    <button type="button" class="btn btn-info" onclick="check()" value="Login">Login</button>
+                </form>
+
+                <br>
+                Don't have an account? <a href="register.html">SignUp Here</a>
+                </div>
+            </center>
+        </div>
+    </div>
+    <footer>
+        <h4>Thank you. Visit again</h4>
+        <p >Copyright &copy; 2020 </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
 </html>

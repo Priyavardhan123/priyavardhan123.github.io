@@ -4,8 +4,16 @@ function check(){
 
     if (username=="user1" && pass=="user10702")
     {
-        alert("Login successful");
-        window.location = "dashboard.html";
+        if (user_type.value=="consumer")
+        {
+            alert("Login successful");
+            window.location = "dashboard.html";
+        }
+        else if (user_type.value=="producer")
+        {
+            alert("Login successful");
+            window.location = "producer_dashboard.html";
+        }
     }
     else
     {

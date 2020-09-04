@@ -9,7 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Add address</title>
+    <title>Order History</title>
   </head>
   <body style="font-family: Montserrat ; background-color: #EFF7FA ; overflow-x: hidden;">
 
@@ -29,13 +29,13 @@
                 
             </ul>
             <ul class="navbar-nav mr-0">
-                <li style="float:right; margin: 3px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
+                    <li style="float:right; margin: 3px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="history.html">Order History</a>
+                    <a class="nav-link active" href="history.html">Order History</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="wishlist.html">Wish List</a>
+                    <a class="nav-link" href="wishlist.html">Wish List</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="cart.html">Cart</a>
@@ -48,19 +48,43 @@
         </div>
     </nav>
     <br>
-
-    <div class="container text-center">
-            <h4 style="font:30px/1.2 'Merienda One', Helvetica, sans-serif;">Add address</h4>
-            <form action="bill.html">
-        
-                    <label for="address">Delivery Address</label><br>
-                    <textarea name="address" id="address" cols="60" rows="10"></textarea>
-               <br>     
-                <button class="btn btn-info" type="submit">Add</button>
-
-            </form>
+    <div class="container">
+        <h4 style="font:30px/1.2 'Merienda One', Helvetica, sans-serif;">Order History</h4>
+        <div class="container" style="background-color: snow; padding: 2%; border-radius: 20px">
+            <div class="row">
+                <div class="col-4">
+                    <img class="img-thumbnail" src="../assets/images/mango.jpg">
+                </div>
+                <div class="col-8 ">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Name : Mango</li>
+                            <li class="list-group-item">Ordered from : Farmer 4</li>
+                            <li class="list-group-item">Quantity : x kg</li>
+                            <li class="list-group-item">Price : </li>
+                            <li class="list-group-item">Date : dd/mm/yyyy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-4">
+                    <img class="img-thumbnail" src="../assets/images/wheat.jpg">
+                </div>
+                <div class="col-8 ">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Name : Wheat</li>
+                            <li class="list-group-item">Ordered from : Farmer 4</li>
+                            <li class="list-group-item">Quantity : x kg</li>
+                            <li class="list-group-item">Price : </li>
+                            <li class="list-group-item">Date : dd/mm/yyyy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><br>
+        </div>
     </div>
-
     <br>
     <footer>
         <h4>Thank you. Visit again</h4>

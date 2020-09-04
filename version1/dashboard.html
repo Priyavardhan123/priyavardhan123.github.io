@@ -1,143 +1,285 @@
 <!doctype html>
-    <head>
-        <title>DashBoard</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    </head>
-    <body bgcolor=#EFF7FA>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <header>
-            <center><p>Crop Marketing System</p></center>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="dashboard.html" class="active">All Products</a></li>
-                <li><a href="#cereals">Cereals</a></li>
-                <li><a href="#pulses">Pulses</a></li>
-                <li><a href="#fruits">Fruits</a></li>
-                <li><a href="#spices">Spices</a></li>    
-                <li style="float:right"><a href="login.html">Logout</a></li>
-                <li style="float:right"><a href="cart.html">Cart</a></li>
-                <li style="float:right"><a href="wishlist.html">Wish List</a></li>
-                <li style="float:right"><a href="order_history.html">Order history</a></li>
-                <li style="float:right; margin: 12px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>DashBoard</title>
+  </head>
+  <body style="font-family: Montserrat ; background-color: #EFF7FA ; overflow-x: hidden;">
+
+    <header class="text-center blog-header bg-dark text-white">
+        <h1 class="p-3">Crop Marketing System</h1>
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="margin-top: -2%">
+        <a class="navbar-brand active brand" href="dashboard.html">All Products</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#cereals">Cereals</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#pulses">Pulses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fruits">Fruits</a>
+                </li>
             </ul>
-        </nav>
+            <ul class="navbar-nav mr-0">
+                    <li style="float:right; margin: 3px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
 
-        <div style="margin: 100px">
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">Order History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wishlist.html">Wish List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="login.html">Logout</a>
+                </li>
+            </ul>
 
-            <h4 style="font:30px 'Merienda One'; text-align: center">Welcome User</h4>
-
-            <table>
-                <tr>
-                    <th colspan="4" id="cereals">
-                        Cereals
-                    </th>
-                </tr>
-                <tr>
-                    <td width="25%">
-                        <img src="../assets/images/wheat.jpg" height=50% width="100%"><br>
-                        <b><u>Wheat</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                    <td width="25%">
-                        <img src="../assets/images/rice.jpg" height=25% width="100%"><br>
-                        <b><u>Rice</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                    <td width="25%">
-                        <img src="../assets/images/maize.jpg" height=43% width="100%"><br>
-                        <b><u>Maize</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                    <td width="25%">
-                        <img src="../assets/images/maize1.jpg" height=33% width="100%"><br>
-                        <b><u>Maize</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                </tr>
-            </table><br><br>
-            <table>
-                <tr>
-                    <th colspan="4" id="pulses">
-                        Pulses
-                    </th>
-                </tr>
-                <tr>
-                    <td width="25%">
-                        <img src="../assets/images/chana.jpg" height=50% width="100%"><br>
-                        <b><u>Gram (chana)</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                    <td width="25%">
-                        <img src="../assets/images/rajma.jpg" height=55% width="100%"><br>
-                        <b><u>kidney beans (rajma)</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                    <td width="25%">
-                        <img src="../assets/images/toor.jpg" height=43% width="100%"><br>
-                        <b><u>toor dal</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                    <td width="25%">
-                        <img src="../assets/images/moong.jpeg" height=33% width="100%"><br>
-                        <b><u>moong</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                </tr>
-            </table><br><br>
-            <table>
-                <tr>
-                    <th colspan="4" id="fruits">
-                        Fruits
-                    </th>
-                </tr>
-                <tr>
-                    <td width="25%">
-                        <img src="../assets/images/apple.png" height="35%" width="100%"><br>
-                        <b><u>Apple</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                    <td width="25%">
-                        <img src="../assets/images/grapes.jpg" height=35% width="100%"><br>
-                        <b><u>grapes</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                    <td width="25%">
-                        <img src="../assets/images/mango.jpg" height=43% width="100%"><br>
-                        <b><u>Mango</u></b>
-                        <p>product details</p>
-                        <button class="btn">Add to cart</button>
-                        <a href="address.html"><button class="btn">Buy now</button></a>
-                    </td>
-                </tr>
-            </table>
         </div>
-        <footer>
-            <h4 >Thank you. Visit again</h4>
-            <p >Copyright &copy; 2020 | <a href="#top">Back to top</a></p>
-        </footer>
-                    
-    </body>
+    </nav>
+    <br>
+    <div class="container">
+        <h4 style="font:30px/1.2 'Merienda One', Helvetica, sans-serif;">Welcome User</h4>
+
+        <div class="container"  style="background-color: snow ; border-radius: 20px"><br>
+            <h4 style="text-align: center" id="cereals">Cereals</h4>
+        <div class="card-group" style="border-radius: 20px">
+            <div class="card" style="margin: 1% ; border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/wheat.jpg" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Wheat</h5>
+                        <p class="card-text">Produced by : Farmer 1 <br>
+                        Location : xyz <br>
+                        Production : abc kg <br>
+                        Contact no : <br>
+                        Description :
+                    </p>
+                    </div>
+                <div class="card-footer">
+                <small class="text-success">Available </small><br>
+                <button class="btn btn-info btn-sm">Add to cart</button>
+                <button class="btn btn-info btn-sm">Buy Now</button>
+                </div>
+            </div>
+            <div class="card" style="margin: 1% ;border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/rice.jpg" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Rice</h5>
+                        <p class="card-text">Produced by : Farmer 4 <br>
+                        Location : xyz <br>
+                        Production : abc kg <br>
+                        Contact no : <br>
+                        Description :
+                    </p>
+                    </div>
+                <div class="card-footer">
+                <small class="text-success">Available</small><br>
+                <button class="btn btn-info btn-sm">Add to cart</button>
+                <button class="btn btn-info btn-sm">Buy Now</button>
+                </div>
+            </div>
+            <div class="card" style="margin: 1% ; border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/maize.jpg" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Maize</h5>
+                        <p class="card-text">Produced by : Farmer 4 <br>
+                        Location : xyz <br>
+                        Production : abc kg <br>
+                        Contact no : <br>
+                        Description :
+                    </p>
+                    </div>
+                <div class="card-footer">
+                <small class="text-success">Available</small><br>
+                <button class="btn btn-info btn-sm">Add to cart</button>
+                <button class="btn btn-info btn-sm">Buy Now</button>
+                </div>
+            </div>
+            <div class="card" style="margin: 1% ; border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/maize1.jpg" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                <h3 class="card-title">Maize</h5>
+                    <p class="card-text">Produced by : Farmer 4 <br>
+                    Location : xyz <br>
+                    Production : abc kg <br>
+                    Contact no : <br>
+                    Description :
+                </p>
+                </div>
+                <div class="card-footer">
+                <small class="text-danger">Out of stock</small><br>
+                <button class="btn btn-info btn-sm">Add to wishlist</button>
+                </div>  
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    </div>
+    <div class="container"  style="background-color: snow ; border-radius: 20px"><br>
+        <h4 style="text-align: center" id="pulses">Pulses</h4>
+        <div class="card-group" style="border-radius: 20px">
+            <div class="card" style="margin: 1% ; border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/toor.jpg" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Toor dal</h5>
+                        <p class="card-text">Produced by : Farmer 1 <br>
+                        Location : xyz <br>
+                        Production : abc kg <br>
+                        Contact no : <br>
+                        Description :
+                    </p>
+                    </div>
+                <div class="card-footer">
+                <small class="text-success">Available </small><br>
+                <button class="btn btn-info btn-sm">Add to cart</button>
+                <button class="btn btn-info btn-sm">Buy Now</button>
+                </div>
+            </div>
+            <div class="card" style="margin: 1% ;border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/rajma.jpg" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Rajma (Kidney Beans)</h5>
+                        <p class="card-text">Produced by : Farmer 4 <br>
+                        Location : xyz <br>
+                        Production : abc kg <br>
+                        Contact no : <br>
+                        Description :
+                    </p>
+                    </div>
+                <div class="card-footer">
+                <small class="text-success">Available</small><br>
+                <button class="btn btn-info btn-sm">Add to cart</button>
+                <button class="btn btn-info btn-sm">Buy Now</button>
+                </div>
+            </div>
+            <div class="card" style="margin: 1% ; border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/chana.jpg" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Gram (Chana)</h5>
+                        <p class="card-text">Produced by : Farmer 4 <br>
+                        Location : xyz <br>
+                        Production : abc kg <br>
+                        Contact no : <br>
+                        Description :
+                    </p>
+                    </div>
+                <div class="card-footer">
+                <small class="text-success">Available</small><br>
+                <button class="btn btn-info btn-sm">Add to cart</button>
+                <button class="btn btn-info btn-sm">Buy Now</button>
+                </div>
+            </div>
+            <div class="card" style="margin: 1% ; border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/moong.jpeg" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                <h3 class="card-title">Moong</h5>
+                    <p class="card-text">Produced by : Farmer 4 <br>
+                    Location : xyz <br>
+                    Production : abc kg <br>
+                    Contact no : <br>
+                    Description :
+                </p>
+                </div>
+                <div class="card-footer">
+                <small class="text-danger">Out of stock</small><br>
+                <button class="btn btn-info btn-sm">Add to wishlist</button>
+                </div>  
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+    </div>
+    <div class="container"  style="background-color: snow ; border-radius: 20px"><br>
+        <h4 style="text-align: center" id="fruits">Fruits</h4>
+        <div class="card-group" style="border-radius: 20px">
+            <div class="card" style="margin: 1% ; border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/apple.png" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Apple</h5>
+                        <p class="card-text">Produced by : Farmer 1 <br>
+                        Location : xyz <br>
+                        Production : abc kg <br>
+                        Contact no : <br>
+                        Description :
+                    </p>
+                    </div>
+                <div class="card-footer">
+                <small class="text-success">Available </small><br>
+                <button class="btn btn-info btn-sm">Add to cart</button>
+                <button class="btn btn-info btn-sm">Buy Now</button>
+                </div>
+            </div>
+            <div class="card" style="margin: 1% ;border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/mango.jpg" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Mango</h5>
+                        <p class="card-text">Produced by : Farmer 4 <br>
+                        Location : xyz <br>
+                        Production : abc kg <br>
+                        Contact no : <br>
+                        Description :
+                    </p>
+                    </div>
+                <div class="card-footer">
+                <small class="text-success">Available</small><br>
+                <button class="btn btn-info btn-sm">Add to cart</button>
+                <button class="btn btn-info btn-sm">Buy Now</button>
+                </div>
+            </div>
+            <div class="card" style="margin: 1% ; border-radius: 20px">
+                <img class="card-img-top" src="../assets/images/grapes.jpg" style="border-radius: 20px" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Grapes</h5>
+                        <p class="card-text">Produced by : Farmer 4 <br>
+                        Location : xyz <br>
+                        Production : abc kg <br>
+                        Contact no : <br>
+                        Description :
+                    </p>
+                    </div>
+                <div class="card-footer">
+                <small class="text-success">Available</small><br>
+                <button class="btn btn-info btn-sm">Add to cart</button>
+                <button class="btn btn-info btn-sm">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        </div>
+        <br>
+    </div>
+
+    
+
+    <br>
+    <footer>
+        <h4>Thank you. Visit again</h4>
+        <p >Copyright &copy; 2020 | <a href="#top" style="color: white">Back to top</a> </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
 </html>

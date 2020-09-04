@@ -1,61 +1,99 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Wish List</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>WishList</title>
   </head>
-  <body bgcolor=#EFF7FA>
+  <body style="font-family: Montserrat ; background-color: #EFF7FA ; overflow-x: hidden;">
 
-    <header>
-        <center><p>Crop Marketing System</p></center>
+    <header class="text-center blog-header bg-dark text-white">
+        <h1 class="p-3">Crop Marketing System</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="dashboard.html" >All Products</a></li>
-            <li style="float:right"><a href="login.html">Logout</a></li> 
-            <li style="float:right"><a href="cart.html">Cart</a></li>
-            <li style="float:right" ><a href="wishlist.html" class="active">Wish List</a></li>
-            <li style="float:right"><a href="order_history.html">Order history</a></li>
-            <li style="float:right; margin: 12px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
-        </ul>
-    </nav>
-    <br>    
-	<center>
-        <u><h3>My Wish List</h3></u> <br>
-        <table style="width: 80%">
-                <tr>
-                    <td width=40%>
-                        <img src="../assets/images/mango.jpg" height="42%" width="100%">
-                    </td>
-                    <td width=60%>
-                        <p>Product name : Mango</p>
-                        <p>Ordered from : farmer 1</p>
-                        <p>Quantity required : x kg</p>
-                        <p style="color: red">Out of stock</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td width=40%>
-                        <img src="../assets/images/rajma.jpg" height="100%" width="100%">
-                    </td>
-                    <td width=60%>
-                        <p>Product name : Kidney beans (rajma)</p>
-                        <p>Ordered from : farmer 4</p>
-                        <p>Quantity required : x kg</p>
-                        <p style="color: green">Available</p>
-                    </td>
-                </tr>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="margin-top: -2%">
+        <a class="navbar-brand brand" href="dashboard.html">All Products</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
                 
-        </table>
-        <br><br>
-        <footer>
-			<h4>Thank you. Visit again</h4>
-			<p >Copyright &copy; 2020 | <a href="#top">Back to top</a> | <a href="dashboard.html">Back to Dashboard</a></p>
-		</footer>
-	</center>
-	</div>
+            </ul>
+            <ul class="navbar-nav mr-0">
+                <li style="float:right; margin: 3px;"> <input type="text" style="padding: 3px" placeholder="search here"></li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">Order History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="wishlist.html">Wish List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="login.html">Logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+            <h4 style="font:30px/1.2 'Merienda One', Helvetica, sans-serif;">WishList</h4>
+            <div class="container" style="background-color: snow; padding: 2%; border-radius: 20px">
+                <div class="row">
+                    <div class="col-4">
+                        <img class="img-thumbnail" src="../assets/images/mango.jpg">
+                    </div>
+                    <div class="col-8 ">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Name : Mango</li>
+                                <li class="list-group-item">Ordered from : Farmer 4</li>
+                                <li class="list-group-item">Quantity required : x kg</li>
+                                <li class="list-group-item text-danger">Out of stock</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-4">
+                        <img class="img-thumbnail" src="../assets/images/rajma.jpg">
+                    </div>
+                    <div class="col-8 ">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Name : Kidney Beans (Rajma)</li>
+                                <li class="list-group-item">Ordered from : Farmer 3</li>
+                                <li class="list-group-item">Quantity required : x kg</li>
+                                <li class="list-group-item text-success">Available</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+
+    <br>
+    <footer>
+        <h4>Thank you. Visit again</h4>
+        <p >Copyright &copy; 2020 | <a href="#top" style="color: white">Back to top</a> | <a href="dashboard.html" style="color: white">Back to DashBoard</a> </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
