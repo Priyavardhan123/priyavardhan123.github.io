@@ -39,12 +39,12 @@ function register(){
 
     else 
     {
-        if (user_type.value == "consumer")
+        if (user_type=="consumer")
         {
             alert("Registration successful.\nUser type : " + user_type + "\nName : " + name + "\nUsername : " + username + "\nE-mail : " + email + "\nContact No. : " + contact );
             window.location = "dashboard.html";
         }
-        else if (user_type.value == "producer")
+        else if (user_type == "producer")
         {
             alert("Registration successful.\nUser type : " + user_type + "\nName : " + name + "\nUsername : " + username + "\nE-mail : " + email + "\nContact No. : " + contact );
             window.location = "producer_dashboard.html";
