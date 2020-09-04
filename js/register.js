@@ -39,7 +39,15 @@ function register(){
 
     else 
     {
-        alert("Registration successful.\nUser type : " + user_type + "\nName : " + name + "\nUsername : " + username + "\nE-mail : " + email + "\nContact No. : " + contact );
-        window.location = "dashboard.html";
+        if (user_type.value == "consumer")
+        {
+            alert("Registration successful.\nUser type : " + user_type + "\nName : " + name + "\nUsername : " + username + "\nE-mail : " + email + "\nContact No. : " + contact );
+            window.location = "dashboard.html";
+        }
+        else if (user_type.value == "producer")
+        {
+            alert("Registration successful.\nUser type : " + user_type + "\nName : " + name + "\nUsername : " + username + "\nE-mail : " + email + "\nContact No. : " + contact );
+            window.location = "producer_dashboard.html";
+        }
     }
 }
