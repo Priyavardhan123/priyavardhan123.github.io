@@ -77,6 +77,7 @@
                 <small class="text-success">Available </small><br>
                 <button class="btn btn-info btn-sm">Add to cart</button>
                 <a href="cart.html"><button class="btn btn-info btn-sm">Buy Now</button></a>
+                <p class="m-2"> Quantity : <button id="wheat_quantity_decrease" class="btn btn-sm btn-info ">-</button> <span id="wheat_quantity"> 0 </span>&nbsp;<button id="wheat_quantity_increase" class="btn btn-sm btn-info">+</button> kg</p>
                 </div>
             </div>
             <div class="card" style="margin: 1% ;border-radius: 20px">
@@ -94,6 +95,7 @@
                 <small class="text-success">Available</small><br>
                 <button class="btn btn-info btn-sm">Add to cart</button>
                 <a href="cart.html"><button class="btn btn-info btn-sm">Buy Now</button></a>
+                <p class="m-2"> Quantity : <button id="rice_quantity_decrease" class="btn btn-sm btn-info">-</button> <span id="rice_quantity"> 0 </span>&nbsp;<button id="rice_quantity_increase" class="btn btn-sm btn-info">+</button> kg</p>
                 </div>
             </div>
             <div class="card" style="margin: 1% ; border-radius: 20px">
@@ -280,6 +282,82 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 </body>
+
+<script>
+    $(document).ready( function(){
+        var rice_quantity = parseInt(document.getElementById("rice_quantity").innerHTML);
+        var wheat_quantity = parseInt(document.getElementById("wheat_quantity").innerHTML);
+        
+        if (wheat_quantity<=0)
+        {
+            wheat_quantity=0;
+            $("#wheat_quantity_decrease").prop('disabled',true);
+        }
+        else
+        {
+            $("#wheat_quantity_decrease").prop('disabled',false);
+        }
+        
+        $("#wheat_quantity_increase").click(function(){
+            console.log("inc button clicked");
+            var wheat_quantity = parseInt(document.getElementById("wheat_quantity").innerHTML);
+            wheat_quantity++;
+            document.getElementById("wheat_quantity").innerHTML = wheat_quantity;
+            $("#wheat_quantity_decrease").prop('disabled',false);
+        })
+        $("#wheat_quantity_decrease").click(function(){
+            console.log("dec button clicked");
+            var wheat_quantity = parseInt(document.getElementById("wheat_quantity").innerHTML);
+            wheat_quantity--;
+            document.getElementById("wheat_quantity").innerHTML = wheat_quantity;
+
+            if (wheat_quantity<=0)
+            {
+                wheat_quantity=0;
+                $("#wheat_quantity_decrease").prop('disabled',true);
+            }
+            else
+            {
+                $("#wheat_quantity_decrease").prop('disabled',false);
+            }
+        })
+
+        if (rice_quantity<=0)
+        {
+            rice_quantity=0;
+            $("#rice_quantity_decrease").prop('disabled',true);
+        }
+        else
+        {
+            $("#rice_quantity_decrease").prop('disabled',false);
+        }
+        
+        $("#rice_quantity_increase").click(function(){
+            console.log("inc button clicked");
+            var rice_quantity = parseInt(document.getElementById("rice_quantity").innerHTML);
+            rice_quantity++;
+            document.getElementById("rice_quantity").innerHTML = rice_quantity;
+            $("#rice_quantity_decrease").prop('disabled',false);
+        })
+        $("#rice_quantity_decrease").click(function(){
+            console.log("dec button clicked");
+            var rice_quantity = parseInt(document.getElementById("rice_quantity").innerHTML);
+            rice_quantity--;
+            document.getElementById("rice_quantity").innerHTML = rice_quantity;
+
+            if (rice_quantity<=0)
+            {
+                rice_quantity=0;
+                $("#rice_quantity_decrease").prop('disabled',true);
+            }
+            else
+            {
+                $("#rice_quantity_decrease").prop('disabled',false);
+            }
+        })
+
+    })
+
+</script>
 </html>
